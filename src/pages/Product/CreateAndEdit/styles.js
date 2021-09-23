@@ -15,21 +15,18 @@ export const Section = styled.section`
   }
 `;
 
-export const CreateContainer = styled.div`
+export const CreateContainer = styled.form`
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  ${Section} {
-    margin-bottom: 3rem;
-  }
 `;
 
 export const Title = styled.h1`
   color: ${theme.primary.main};
+  margin-bottom: 1rem;
 `;
 
 export const CustomButton = styled(Button)`

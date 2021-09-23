@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
 import CreateAndEdit from "../pages/Product/CreateAndEdit";
+import List from "../pages/Product/List";
 
 export default function Routes() {
   return (
@@ -21,7 +22,9 @@ export default function Routes() {
           </Layout>
         </Route>
         <Route path="/">
-          <Layout>produtos</Layout>
+          <Layout>
+            <List />
+          </Layout>
         </Route>
       </Switch>
 
